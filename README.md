@@ -1,5 +1,3 @@
-# indexHere’s a ready-to-use shopping page index.html file you can copy and run in your browser. It’s a simple e-commerce homepage with a product grid, navigation, and footer.
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -126,13 +124,3 @@
   </footer>
 </body>
 </html>
-
-
-⚡ Features included:
-- Header & Navigation bar
-- Product cards with image, name, price, and “Add to Cart” button
-- Hover effect for product cards
-- Footer
-👉 Save this as index.html and open it in your browser — you’ll see a neat shopping homepage.
-Would you like me to also add a cart.html page so the “Cart” link works, making it feel like a mini shopping site?
-.html
