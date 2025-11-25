@@ -1,20 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Page</title>
+  <title>Landing Page</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       background: #f9f9f9;
     }
     header {
       background: #2c3e50;
       color: #fff;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
     }
     nav {
       background: #34495e;
@@ -27,100 +36,67 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .product {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      margin: 15px;
-      padding: 15px;
-      width: 250px;
+    .section {
+      padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
     }
-    .product:hover {
-      transform: scale(1.05);
+    .section h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
     }
-    .product img {
-      max-width: 100%;
-      height: auto;
-    }
-    .product h3 {
-      margin: 10px 0;
-    }
-    .product p {
-      color: #555;
-      font-size: 16px;
-    }
-    .product button {
+    .btn {
+      display: inline-block;
       background: #27ae60;
       color: #fff;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      border-radius: 3px;
-      font-size: 14px;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background 0.3s;
     }
-    .product button:hover {
+    .btn:hover {
       background: #219150;
     }
     footer {
       background: #2c3e50;
       color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🛒 My Shopping Page</h1>
-    <p>Find the best deals here!</p>
+    <h1>Welcome to My Landing Page</h1>
+    <p>Your one-stop solution for awesome products and services</p>
+    <a href="#about" class="btn">Learn More</a>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Cart</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="container">
-    <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>$19.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>$29.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Product 3">
-      <h3>Product 3</h3>
-      <p>$39.99</p>
-      <button>Add to Cart</button>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/200" alt="Product 4">
-      <h3>Product 4</h3>
-      <p>$49.99</p>
-      <button>Add to Cart</button>
-    </div>
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <p>We provide high-quality solutions tailored to your needs. Our mission is to deliver excellence.</p>
+  </div>
+
+  <div id="features" class="section">
+    <h2>Features</h2>
+    <p>✔ Easy to use<br>✔ Responsive design<br>✔ Fast and reliable<br>✔ Customer-focused</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+
+  <div id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com<br>Phone: +91 98765 43210</p>
   </div>
 
   <footer>
-    <p>&copy; 2025 My Shopping Page. All rights reserved.</p>
+    <p>&copy; 2025 My Landing Page. All rights reserved.</p>
   </footer>
 </body>
 </html>
